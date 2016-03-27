@@ -1,4 +1,5 @@
-# START: 3/28 00:13
+# 1 START: 3/28 00:13
+# 1 END:   3/28 01:10
 
 args = "3:Oh,Be,AF,in,eG,ir,l5,Q8,mC,7T,Ty,tT"
 element, *dots = args.split(/[:,]/)
@@ -26,6 +27,9 @@ def min_wrapping_square_coordinate dots
   }
 end
 
-def enclosed? sq_coords, xy
-
+def enclosed? sq_hash, xy
+  x, y = xy[0], xy[1]
+  return true if sq_hash[:min_x] <= x && x <= sq_hash[:max_x] &&
+                 sq_hash[:min_y] <= y && y <= sq_hash[:max_y]
+  return false
 end
