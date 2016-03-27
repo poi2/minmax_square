@@ -11,3 +11,17 @@ DECODER = [*("0".."9"), *("A".."Z"), *("a".."z")]
 def numlize str
   DECODER.find_index(str)
 end
+
+def min_wrapping_square_coordinate dots
+  # 与えられた点を含む四角形の座標を左下、右下、右上、左上の順に返す
+  max_x = dots.transpose.first.max
+  min_x = dots.transpose.first.min
+  max_y = dots.transpose.last.max
+  min_y = dots.transpose.last.min
+  [
+    [min_x, min_y],
+    [max_x, min_y],
+    [max_x, max_y],
+    [min_x, max_y],
+  ]
+end
