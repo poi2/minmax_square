@@ -13,15 +13,19 @@ def numlize str
 end
 
 def min_wrapping_square_coordinate dots
-  # 与えられた点を含む四角形の座標を左下、右下、右上、左上の順に返す
+  # 与えられた点を含む最小の四角形の、x, yの最大値、最小値をそれぞれ返す
   max_x = dots.transpose.first.max
   min_x = dots.transpose.first.min
   max_y = dots.transpose.last.max
   min_y = dots.transpose.last.min
-  [
-    [min_x, min_y],
-    [max_x, min_y],
-    [max_x, max_y],
-    [min_x, max_y],
-  ]
+  {
+    min_x: min_x,
+    max_x: max_x,
+    min_y: min_y,
+    max_y: max_y,
+  }
+end
+
+def enclosed? sq_coords, xy
+
 end
