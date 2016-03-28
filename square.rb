@@ -4,6 +4,17 @@
 # 2 END:   3/29 00:35
 
 args = "3:Oh,Be,AF,in,eG,ir,l5,Q8,mC,7T,Ty,tT"
+# args = "3:00,zz,0z,z0"
+# args = "1:ho"
+# args = "2:am"
+# args = "13:Lk,y3,uO,Gk,sF,7y,ED,FP,rK,vw,Lo,kT,ib,MR,sC,Cu,xQ"
+# args = "7:6Q,av,UZ,0c,IV,fo,Vv,mg,no,qM,06,zy,jW,R0,Qo,sK,wQ,1b,De,Iy,zI,cx,rn,ot,cN,45"
+# args = "8:zN,2J,ta,HL,Dg,up,Qn,W8,8K,k4,Is,uL,dT,tA,PN,UQ,DB,gA,OO,lv,4h,Rv,D6,23,Tg,4S,Zb"
+# args = "5:px,sp,cr,dB,fz,65,gq,zb,sN,42,o0,y3,iE,pv,sn,Al,RE,48,l0,7X,DE,xL,wC,qQ,w5,C3,P3,i1"
+
+# fail
+# args = "9:Ic,Dk,Ef,6R,GK,NZ,76,L0,oQ,9f,S3,oL,lX,7v,8d,pX,dZ,z7,zx,fR,pe,w7,aj,U9,lO,kv,wL,s0"
+# args = "11:lQ,EN,vO,tn,qO,F3,9k,K2,UC,P0,XY,DB,QO,ps,hy,fl,Dt,ex,Vc,vF,Pf,Vk,uo,Xc,Sh,KE,9g,3H,l6"
 element, *dots = args.split(/[:,]/)
 
 def euclidlize di_str
